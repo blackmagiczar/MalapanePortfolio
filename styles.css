@@ -1,0 +1,259 @@
+body{
+    background-color: rgb(112, 116, 133);
+    margin: 0rem;
+    font-family: 'century gothic', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#welcome-section{
+    background-color: rgb(50,52,60);
+    height: 100vh;
+    
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(100,200,120);
+    margin: 0px;
+    height: 4rem;
+    padding-right: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0px 0px 7px 5px;
+}
+#about{
+    padding-top: 2rem;
+}
+#header>#navbar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+#header a{
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+#header a:hover{
+    background-color: rgb(50,52,60);
+}
+#header nav a{
+    padding-left: 1rem;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#header>a{
+    font-weight: 100;
+    font-family: cursive;
+    padding-top: .8rem;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d7d7d7;
+    
+}
+strong{
+    color: #af2c2e;
+}
+#about h1{
+    font-size: 3rem;
+    margin-bottom: 0rem;
+}
+#about p{
+    color: black;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+#animation i{
+    position: absolute;
+}
+
+#king{
+    left: 5rem;
+    top: 10rem;
+}
+#queen{
+    left: 42rem;
+    top: 15rem;
+}
+#bishop{
+    left: 10rem;
+    top: 38rem;
+}
+#knight{
+    right: 15rem;
+    top: 35rem;
+}
+#pawn1{
+    right: 5rem;
+    top: 9rem;
+}
+#pawn2{
+    left: 39rem;
+    top: 39rem;
+}
+#animation i{
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #d7d7d7;
+    width: 100vw;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+}
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px 3px;
+}
+.project-tile img{
+    height: 400px;
+    object-fit: cover;
+}
+#folio{
+    width: 300px;
+    height: 420px;
+}
+#hazy{
+    width: 300px;
+}
+#doom{
+    width: 400px;
+    
+}
+#social{
+    height: 420px;
+}
+
+#links{
+    background-color: rgb(50,52,60);
+    display: flex;
+    justify-content: center;
+    
+}
+#links a{
+    color: #af2c2e;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: fit-content;
+}
+#links a:hover{
+    background-color: #d7d7d7;
+}
+#contact{
+    margin-top: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#socials{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+#socials i{
+    color: black;
+}
+#socials i:hover{
+    color: rgb(54, 54, 54);
+}
+#divider{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 5px solid #af2c2e;
+}
+
+#foot a{
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+#foot a{
+    padding-left: 1rem;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#foot>a{
+    font-weight: 100;
+    font-family: cursive;
+    padding-top: .8rem;
+}
+
+
+@keyframes rotation {
+    0%{
+        rotate: 0deg;
+        
+    }
+    25%{
+        rotate: 15deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -15deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    #header{
+        height: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #about{
+        padding-top: 6rem;
+    }
+    
+    #king{
+        display: none;
+    }
+    #queen{
+        display: none;
+    }
+    #bishop{
+        display: none;
+    }
+    #knight{
+        right: 7rem;
+    }
+    #pawn1{
+        display: none;
+    }
+    #pawn2{
+        display: none;
+    }
+}
